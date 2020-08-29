@@ -52,7 +52,7 @@ namespace KobeBryantAPI
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+                endpoints.MapControllers();
             });
         }
     }
