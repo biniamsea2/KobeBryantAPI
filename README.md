@@ -1,3 +1,0 @@
-# KobeBryantAPI
-Kobe Bryant API
-
