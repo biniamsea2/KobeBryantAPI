@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace KobeAPI.Models.Interface
 {
-    public class IKobe
+    public interface IKobe
     {
         //Get individual record
         IEnumerable<Kobe> GetAllRecords();

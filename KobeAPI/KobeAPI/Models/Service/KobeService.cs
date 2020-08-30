@@ -1,5 +1,4 @@
-﻿using KobeAPI.Data;
-using KobeAPI.Models.Interface;
+﻿using KobeAPI.Models.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -2,7 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using KobeAPI.Data;
+using KobeAPI.Models.Interface;
+using KobeAPI.Models.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -16,6 +17,7 @@ namespace KobeAPI
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,12 +29,8 @@ namespace KobeAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddMvc();
 
-
-
-            services.AddDbContext<KobeDbContext>(options => options.UseSqlServer(DefaultConnection));
-
+            services.AddTransient<IKobe, KobeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
