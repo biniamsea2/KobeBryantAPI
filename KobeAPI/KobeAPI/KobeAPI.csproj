@@ -2,7 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e3e1fd82-d9f3-4c4d-a4c6-b7f1ba4c2af2</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
 
 
 </Project>
