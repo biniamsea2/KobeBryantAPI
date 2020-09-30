@@ -1,1 +1,1 @@
-updated repo: [test](https://github.com/biniamsea2/KobeAPI)
+updated repo: [KobeBryantAPI](https://github.com/biniamsea2/KobeAPI)
